@@ -1,0 +1,126 @@
+# ============================================================
+# Buck-et List Brands — .gitignore
+# Safely excludes unnecessary or sensitive files from Git.
+# Covers Next.js, TypeScript, Tailwind, AWS, Node, and Vercel.
+# ============================================================
+
+# ------------------------------------------------------------
+# Node.js & Dependency Artifacts
+# ------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json  # optional — comment out if you prefer committing it
+
+# ------------------------------------------------------------
+# Next.js Build Output
+# ------------------------------------------------------------
+.next/
+out/
+build/
+.next/static/
+.next/cache/
+
+# ------------------------------------------------------------
+# Deployment Platforms
+# ------------------------------------------------------------
+.vercel/           # Vercel deployment artifacts
+.amplify/          # AWS Amplify build output
+.aws-sam/          # AWS SAM build output
+.aws/              # AWS CLI and credentials directory
+
+# ------------------------------------------------------------
+# TypeScript
+# ------------------------------------------------------------
+*.tsbuildinfo
+
+# ------------------------------------------------------------
+# Tailwind & PostCSS
+# ------------------------------------------------------------
+*.css.map
+*.postcssrc
+*.stylelintcache
+
+# ------------------------------------------------------------
+# Environment Files
+# ------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.backup
+
+# ------------------------------------------------------------
+# AWS & Cloud Credentials
+# ------------------------------------------------------------
+*.pem
+*.key
+*.crt
+*.csr
+.aws-config.json
+.aws-credentials.json
+
+# ------------------------------------------------------------
+# Logs & Temporary Files
+# ------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------
+# IDE & Editor Settings
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.iml
+
+# ------------------------------------------------------------
+# Testing & Coverage
+# ------------------------------------------------------------
+coverage/
+.nyc_output/
+jest-test-results.json
+test-report.xml
+
+# ------------------------------------------------------------
+# Build & Distribution
+# ------------------------------------------------------------
+dist/
+*.zip
+*.tar
+*.gz
+*.tgz
+*.7z
+
+# ------------------------------------------------------------
+# Miscellaneous
+# ------------------------------------------------------------
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Local project backups
+*_old/
+*_backup/
+*_bak/
+backup/
+
+# ------------------------------------------------------------
+# Documentation
+# ------------------------------------------------------------
+# Keep README.md but ignore temporary or export versions
+README-backup*.md
+README-draft*.md
