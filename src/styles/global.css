@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Site Defaults */
+html, body {
+  @apply bg-white text-stone-900 scroll-smooth;
+}
