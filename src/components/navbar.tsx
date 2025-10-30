@@ -71,7 +71,7 @@ export default function Navbar() {
             <ShoppingBag size={22} />
             {/* Cart Item Count (optional badge) */}
             <span className="absolute -top-2 -right-2 bg-amberwood text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
-              2
+              
             </span>
           </Link>
 
