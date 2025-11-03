@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion'; // For entry and hover animations
-import Footer from '@/components/footer';
 
 export default function HomePage() {
   return (
@@ -24,7 +23,7 @@ export default function HomePage() {
       */}
       <section
         className="relative flex flex-col items-center justify-center text-center py-40 px-6
-                   bg-[url('/images/forest-bg.jpg')] bg-cover bg-center bg-fixed
+                   bg-[url('/deer-bg.jpg')] bg-cover bg-center bg-fixed
                    before:absolute before:inset-0 before:bg-black/50"
       >
         {/* Motion wrapper for smooth fade-in and upward slide animation */}
@@ -91,9 +90,9 @@ export default function HomePage() {
           {/* Responsive 3-column grid (collapses on mobile) */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { name: 'Stealth Jacket', image: 'jacket.jpg', href: '/product/stealth-jacket' },
-              { name: 'Trail Cap', image: 'cap.jpg', href: '/product/trail-cap' },
-              { name: 'Ranger Hoodie', image: 'hoodie.jpg', href: '/product/ranger-hoodie' },
+              { name: 'Hoodies', image: 'jacket.jpg', href: '/product/stealth-jacket' },
+              { name: 'Shirts', image: 'cap.jpg', href: '/product/trail-cap' },
+              { name: 'Hats', image: 'hoodie.jpg', href: '/product/ranger-hoodie' },
             ].map((item) => (
               <Link key={item.name} href={item.href}>
                 <motion.div

@@ -11,9 +11,9 @@ import Footer from "@/components/footer";
  */
 
 export const metadata: Metadata = {
-  title: "Buck-et List Brands | Premium Hunting Apparel",
+  title: "Buck-et List Brands",
   description:
-    "Modern hunting gear built for the wild — crafted with Next.js, AWS, and style.",
+    "Modern hunting apparel built for the wild",
   icons: {
     icon: "/icon.png", // stored in /public/icon.png
   },
@@ -32,7 +32,7 @@ export default function RootLayout({
       */}
       <body className="bg-forest text-stone-100 font-sans antialiased">
         <Navbar />
-        <main className="pt-20">{children}</main>
+        <main className="relative z-10 pt-20">{children}</main>
         <Footer/>
       </body>
     </html>
